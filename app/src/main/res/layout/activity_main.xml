@@ -4,22 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     android:background="@color/red"
+    xmlns:tools="http://schemas.android.com/tools"
 
     >
 
     <TextView
-
-        android:layout_width="wrap_content"
+        android:id="@+id/tvMainTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:background="@color/white"
+        tools:text="Hola Platzi, curso interface" />
+    <TextView
 
-        android:text="Hola Platzi, curso interface" />
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        tools:textSize="20sp"
+        tools:background="@color/azul"
+        tools:text="Hola Platzi, curso interface" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/white"
+        tools:text="Hola Platzi, curso interface" />
 
     <EditText
         android:hint="Escribe tu nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background"
         android:inputType="number"></EditText>
 
 
