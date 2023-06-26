@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:src="@drawable/logo"></ImageView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+    </Space>
+    <EditText
+        android:padding="12dp"
+        android:layout_margin="12dp"
+        android:drawableStart="@drawable/vector_person"
+        android:id="@+id/etusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity=""
+        android:hint="@string/hint_usuario"></EditText>
+
+    <EditText
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:drawableStart="@drawable/vector_lock"
+        android:id="@+id/etcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:hint="@string/hint_contraseña"></EditText>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+    </Space>
+    <Button
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/colorbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Buttonlogin"></Button>
+</LinearLayout>
