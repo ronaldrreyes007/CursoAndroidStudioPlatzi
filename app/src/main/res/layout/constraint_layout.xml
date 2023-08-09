@@ -8,14 +8,10 @@
 
     >
 
-    <ImageView
-        android:id="@+id/ivLoginlogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/heigth_logo"
-        android:src="@drawable/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+    <include
+        layout="@layout/merge_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></include>
 
     <EditText
         android:id="@+id/etusuario"
@@ -44,18 +40,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etusuario"></EditText>
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/logo"
+        app:civ_border_color="#FF000000"
         app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
