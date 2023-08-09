@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <item name="colorAccent">@color/colorbutton</item>
+        
+    </style>
+    
+    <style name="AppTheme.Red" parent="AppTheme">
+        <item name="android:background">@color/purple</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="AppTheme.Green" parent="AppTheme">
+        <item name="android:textColor">@color/light_green</item>
+        <item name="android:background">@color/red</item>
+        
+    </style>
+    
+    <style name="AppTheme.EditTextStyle" parent="AppTheme">
+        <item name="android:textSize">30sp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:layout_margin">@dimen/margin_default</item>
+
+    </style>
+
+
+</resources>
